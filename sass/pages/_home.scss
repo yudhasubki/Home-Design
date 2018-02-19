@@ -1,0 +1,185 @@
+.services{
+    min-height: 90vh;
+    position: relative;
+    &__image-1{
+        background-image: url(../img/img-2.jpg);
+        width: 100%;
+        height: 350px;
+        background-position: center;
+        background-size: cover;
+
+        @include respond(phone){
+            width: 100%;
+            max-height:100%;
+        }
+
+    }
+
+    &__image-2{
+        background-image: url(../img/img-3.jpg);
+        width: 100%;
+        height: 350px;
+        background-position: center;
+        background-size: cover;
+        @include respond(phone){
+            width: 100%;
+            max-height:100%;
+        }
+    }
+
+    &__detail{
+        margin-top: 10rem;
+        &-title{
+            @include title();
+        }
+
+        &-desc{
+            margin-top: 3rem;
+            font-size: 1.5rem;
+            text-align: left;
+            line-height: 200%;
+            color: $color-grey-dark-2;
+        }
+    }
+}
+
+.product{
+    //background-color: $color-grey-light-1;
+    width: 100%;
+    min-height: 90vh;
+
+    &__title{
+        @include title();
+    }
+}
+
+.buy{
+    min-height: 90vh;
+
+    &__title{
+        @include title();
+    }
+
+    &__desc{
+        &-1{
+            border-left: 10px solid $color-primary-dark;
+            margin-top: 6rem;
+            width: 100%;
+            min-height: 60vh;
+            background-image: linear-gradient(to right bottom,rgba($color-primary-light,.7),rgba($color-primary-dark,.7)),url(../img/img-5.jpg);
+            padding: 8rem;
+            background-size: cover;
+            background-position: center;
+        }
+
+        &-2{
+            border-right: 10px solid $color-secondary-dark;
+            margin-top: 6rem;
+            width: 100%;
+            min-height: 60vh;
+            background-image: linear-gradient(to right bottom,rgba($color-secondary-light,.7),rgba($color-secondary-dark,.7)),url(../img/img-6.jpg);
+            padding: 8rem;
+            background-size: cover;
+            background-position: center;
+        }
+
+        &-heading{
+            color: $color-white;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 700; 
+            font-size: 2.5rem;
+        }
+
+        &-paragraph{
+            margin-top: 4rem;
+            font-size: 2rem;
+            color: $color-white;
+            font-weight: 700; 
+        }
+    }
+}
+
+
+.testimonials{
+    min-height: 50vh;
+    background-image:linear-gradient(to right bottom,rgba($color-grey-dark-3,.7),rgba($color-grey-dark-3,.7)), url(../img/img-10.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-top: 50px;
+    background-position: center;
+    padding-bottom: 50px;
+    &__center{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__image{
+        justify-content: center;
+        height: 100%;
+    }
+
+    &__title{
+        @include title();
+        &-white{
+            color: $color-white !important;
+        }
+    }
+
+    &__desc{
+        font-size: 14px;
+        text-align: center;
+        line-height: 200%;
+        &-p{
+            width: 75%;
+            color: $color-white;
+        }
+
+        &::before{
+            content:"";
+            background-image: url(../img/quotes.svg);
+            width: 20px;
+            height: 20px;
+            background-size: contain;
+        }
+
+        &::after{
+            content:"";
+            background-image: url(../img/quotes.svg);
+            width: 20px;
+            height: 20px;
+            transform: rotate(180deg);
+            background-size: contain;
+            margin-top: 50px;
+        }
+    }
+
+    &__name{
+        font-size: 14px;
+        text-align: center;
+        &-p{
+            color: $color-white;
+            letter-spacing: 2px;
+        }
+    }
+}
+
+.footer{
+    min-height: 30vh;
+    background-color: $color-grey-dark-3;
+    margin-bottom: 30px;
+
+    &__brand{
+        padding-top: 30px;
+    }
+
+    &__copyright{
+        font-size: 14px;
+        color: $color-white;
+    }
+
+    &__name{
+        color: $color-primary;
+    }
+}

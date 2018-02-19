@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;//1rem = 10px
+
+    @include respond(phone){
+        font-size: 50%;
+    }
+
+    @include respond(tab-port){
+        font-size: 50%;
+    }
+
+    @include respond(tab-land){
+        font-size: 56.25%;
+    }
+
+    @include respond(big-dekstop){
+        font-size: 75%;
+    }
+}
+
+body{
+    font-family: 'Roboto',sans-serif;
+}

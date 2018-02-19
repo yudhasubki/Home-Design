@@ -1,0 +1,17 @@
+.nav{
+    &-item{
+        font-family: 'Roboto Condensed',sans-serif;
+
+        &:not(:last-child){
+            margin-right: 2rem;
+        }
+    }
+
+    &-link{
+        color: $color-primary-dark;
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        font-weight: 700;
+        @include hovernav();
+    }
+}
